@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template</title>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/master.css" />
+    <!-- Google Fonts -->
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <i class="fa-solid fa-scale-balanced"></i>
+            <h6 data-translate="title">Your Web</h6>
+          </a>
+        </div>
+        <nav>
+          <i class="fas fa-bars toggle-menu"></i>
+          <ul class="menu-ul">
+            <li><a href="index.html" data-translate="home">Home</a></li>
+            <li>
+              <a href="services.html" data-translate="services">Services</a>
+            </li>
+            <li><a href="pricing.html" data-translate="pricing">Pricing</a></li>
+            <li><a href="about.html" data-translate="about">About</a></li>
+            <li><a href="contact.html" data-translate="contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="social-links">
+          <a href="#" target="_blank">
+            <i class="fa-brands fa-facebook facebook"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i class="fa-brands fa-instagram insta"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i class="fab fa-youtube youtube"></i>
+          </a>
+        </div>
+
+        <!-- Language Menu -->
+        <div class="lang-menu">
+          <div class="select-btn">
+            <img class="current-lang-img" src="img/uk.webp" alt="" />
+            <div class="current-lang">English</div>
+            <!-- <i class="fa-solid fa-angle-down lang-arrow"></i> -->
+          </div>
+          <ul class="lang-options" id="langOptions">
+            <li class="lang-option">
+              <img src="img/uk.webp" alt="" />
+              <span class="lang-text" value="en">English</span>
+            </li>
+            <li class="lang-option">
+              <img src="img/eg.webp" alt="" />
+              <span class="lang-text" value="ar">عربي</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Landing Section -->
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 data-translate="contactUs">Contact Us</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Name" data-translate="theName" required />
+          <input type="email" placeholder="Email" data-translate="theEmail" required />
+          <input type="tel" placeholder="Phone" data-translate="theMobile" />
+          <textarea rows="5" placeholder="Your message" data-translate="yourMess" required></textarea>
+          <button type="submit" data-translate="sendMess">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p data-translate="rights">© All rights reserved 2024.</p>
+        <p data-translate="address">123 Legal Avenue, Suite 500, New York, NY 10001</p>
+        <p data-translate="mobile">Tel: (555) 123-4567</p>
+      </div>
+    </footer>
+
+    <a href="https://api.whatsapp.com/send?phone=00201023350834&text=تواصل معنا الان" class="whatsapp-button" target="_blank" style="position: fixed;  right: 15px; bottom: 15px;">
+      <img src="https://i.ibb.co/VgSspjY/whatsapp-button.png" alt="whatsapp">
+      <p>01023350834</p>
+    </a>
+
+
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

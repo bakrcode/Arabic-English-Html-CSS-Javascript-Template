@@ -1,0 +1,36 @@
+export const translations = {
+    en: {
+      title: "Your Website",
+    home: "Home",
+    services: "Services",
+    pricing: "Pricing",
+    about: "About",
+    contact: "Contact",
+        contactUs: "Contact Us",
+        theName: "Name",
+        theEmail: "Email",
+        theMobile: "Mobile",
+        yourMess:"Your Message",
+    sendMess: "Send Message",
+    rights: "© All rights reserved 2024",
+        address: "Address: 123 Main St, West, Cairo",
+    mobile: "Mobile: 01023350834"
+  },
+    ar: {
+        title: "عنوان موقعك",
+    home: "الرئيسية",
+    services: "الخدمات",
+    pricing: "التكلفة",
+    about: "حول",
+    contact: "اتصل بنا",
+        contactUs: "تواصل معنا الان",
+        theName: "الإسم",
+        theEmail: "البريد الإلكتروني",
+        theMobile: "رقم الهاتف",
+        yourMess:"اكتب رسالتك",
+    sendMess: "إرسال",
+      rights: "جميع الحقوق محفوظة للموقع ©",
+      address: "العنوان: وسط البلد القاهرة",
+      mobile: "موبايل: 01023350834"
+  },
+};
