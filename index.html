@@ -67,37 +67,114 @@
         </div>
       </div>
     </header>
+    <!-- End of Header Section -->
 
     <!-- Landing Section -->
+    <section class="landing">
+      <div class="container">
+        <div class="landing-text">
+          <h1 data-translate="landingTitle">Welcome to our website</h1>
+          <p data-translate="landingDescription">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+            amet nulla auctor, vestibulum magna sed, convallis ex.
+          </p>
+        </div>
+      </div>
 
+      <i class="fa-solid fa-angles-left change-background fa-2x"></i>
+
+      <i class="fa-solid fa-angles-right change-background fa-2x"></i>
+      <ul class="bullets">
+        <li></li>
+        <li class="active"></li>
+        <li></li>
+      </ul>
+    </section>
+    <!-- End of Landing Section -->
+
+    <!-- Contact Section -->
     <section id="contact" class="contact">
       <div class="container">
-        <h2 data-translate="contactUs">Contact Us</h2>
-        <form class="contact-form">
-          <input type="text" placeholder="Name" data-translate="theName" required />
-          <input type="email" placeholder="Email" data-translate="theEmail" required />
-          <input type="tel" placeholder="Phone" data-translate="theMobile" />
-          <textarea rows="5" placeholder="Your message" data-translate="yourMess" required></textarea>
-          <button type="submit" data-translate="sendMess">Send Message</button>
-        </form>
+        <div class="map-container">
+          <h2 data-translate="location">Our Location</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.4873190062517!2d31.250346076048498!3d30.051562918232563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584098461d8513%3A0xd7a1220e1a79ea4f!2z2YjYs9i3INin2YTYqNmE2K8g2KfZhNmC2KfZh9ix2KkgMTkzNw!5e0!3m2!1sen!2seg!4v1730295257553!5m2!1sen!2seg"
+            width="100%"
+            height="auto"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <p data-translate="address">Address: West, Cairo</p>
+          <p data-translate="mobile">Tel: 01023350834</p>
+        </div>
+        <div class="form-container">
+          <h2 data-translate="contactUs">Contact Us</h2>
+          <form class="contact-form" id="contact-form">
+            <input
+              name="name"
+              type="text"
+              placeholder="Name"
+              data-translate="theName"
+              required
+            />
+            <input
+              name="email"
+              type="email"
+              placeholder="Email"
+              data-translate="theEmail"
+              required
+            />
+            <input
+              name="phone"
+              type="tel"
+              placeholder="Phone"
+              data-translate="theMobile"
+            />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Your message"
+              data-translate="yourMess"
+              required
+            ></textarea>
+            <button type="submit" data-translate="sendMess">
+              Send Message
+            </button>
+            <div class="loader">
+              <i class="fa-solid fa-rotate rotate"></i>
+            </div>
+            <div class="form-message"></div>
+          </form>
+        </div>
       </div>
     </section>
+    <!-- End of Contact Section -->
 
+    <!-- Footer Section -->
     <footer>
       <div class="container">
         <p data-translate="rights">© All rights reserved 2024.</p>
-        <p data-translate="address">123 Legal Avenue, Suite 500, New York, NY 10001</p>
+        <p data-translate="address">Address: West, Cairo</p>
         <p data-translate="mobile">Tel: (555) 123-4567</p>
       </div>
     </footer>
+    <!-- End of Footer Section -->
 
-    <a href="https://api.whatsapp.com/send?phone=00201023350834&text=تواصل معنا الان" class="whatsapp-button" target="_blank" style="position: fixed;  right: 15px; bottom: 15px;">
-      <img src="https://i.ibb.co/VgSspjY/whatsapp-button.png" alt="whatsapp">
+    <a
+      href="https://api.whatsapp.com/send?phone=00201023350834&text=تواصل معنا الان"
+      class="whatsapp-button"
+      target="_blank"
+      style="position: fixed; right: 15px; bottom: 15px"
+    >
+      <img src="https://i.ibb.co/VgSspjY/whatsapp-button.png" alt="whatsapp" />
       <p>01023350834</p>
     </a>
-
-
-
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script type="module" src="script.js"></script>
   </body>
 </html>

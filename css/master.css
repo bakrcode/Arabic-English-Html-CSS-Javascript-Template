@@ -8,6 +8,7 @@
   --primary: #2c3e50;
   --accent: #c0392b;
   --light: #ecf0f1;
+  --transparent-color: rgb(15 116 143 / 70%);
 
   --max-width: 1170px;
 }
@@ -366,6 +367,65 @@ header nav ul li a:hover::after {
 /* Start Landing */
 /*-------------------------*/
 
+.landing {
+  min-height: calc(100vh - 60.9px);
+  background-color: black;
+  position: relative;
+}
+
+.landing .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-text {
+  color: white;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+}
+
+.landing .change-background {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ddd;
+}
+
+@media (max-width: 767px) {
+  .landing .change-background {
+    display: none;
+  }
+}
+.landing .fa-angles-left {
+  left: 30px;
+}
+
+.landing .fa-angles-right {
+  right: 30px;
+}
+
+.landing .bullets {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  display: flex;
+}
+
+.landing .bullets li {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+
+.landing .bullets li.active {
+  background-color: var(--transparent-color);
+  border-color: var(--transparent-color);
+}
 .contact {
   height: calc(100vh - 60.9px);
   display: flex;
@@ -376,6 +436,39 @@ header nav ul li a:hover::after {
   background: var(--primary);
   color: var(--light);
   text-align: center;
+}
+
+.contact .container {
+  display: flex;
+  gap: 1%;
+  flex-wrap: wrap;
+}
+
+.map-container,
+.form-container {
+  width: 47%;
+}
+
+.map-container {
+  min-height: 100%;
+}
+
+.map-container iframe {
+  height: 76%;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.map-container p {
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .map-container,
+  .form-container {
+    width: 100%;
+    padding: 2rem;
+  }
+
 }
 
 .contact-form {
@@ -394,7 +487,15 @@ textarea {
   resize: none;
 }
 
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 button {
+  /* width: 100%; */
   background: var(--accent);
   color: white;
   border: none;
@@ -406,6 +507,50 @@ button {
 
 button:hover {
   background: #a93226;
+}
+
+.loader {
+  padding-top: 1rem;
+  display: none;
+}
+
+.loader.show {
+  display: block;
+}
+.rotate {
+  /* visibility: hidden; */
+
+  animation: rotateme 0.4s linear infinite;
+}
+
+@keyframes rotateme {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.form-message {
+  display: none;
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-message.show {
+  display: block;
+}
+
+.success-msg {
+  color: rgb(105, 171, 7);
+}
+
+.error-msg {
+  color: red;
 }
 
 footer {
