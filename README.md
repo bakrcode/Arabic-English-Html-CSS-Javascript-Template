@@ -3,6 +3,6 @@
     <a
       target="_blank"
       href="https://arabic-english-template.netlify.app/"
-      >Arabic-English Tempplate</a
+      >Arabic-English Template</a
     >
   </h3>
