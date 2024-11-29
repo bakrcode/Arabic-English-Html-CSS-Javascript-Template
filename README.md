@@ -2,7 +2,7 @@
     Project Live Link:
     <a
       target="_blank"
-      href="https://my-clinic-test.netlify.app"
+      href="https://arabic-english-template.netlify.app/"
       >Arabic-English</a
     >
   </h3>
