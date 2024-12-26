@@ -16,7 +16,7 @@ export const translations = {
     yourMess: "Your Message",
     sendMess: "Send Message",
     rights: "© All rights reserved 2024",
-    address: "Address: 123 Main St, West, Cairo",
+    address: "Address: 123 Main St, Cairo",
     mobile: "Mobile: 01023350834",
     location: "Our Location",
   },
